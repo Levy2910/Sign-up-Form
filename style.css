@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(0, 100%, 74%);
+    font-family: 'Poppins', sans-serif;
+    
+}
+/* container */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 6rem;
+}
+/* left side */
+.left{
+    width: 40%;
+    color: #fff;
+    padding: 1em;
+}
+.left h1 {
+    font-weight: 700;
+    line-height: 1.25em;
+    margin-bottom: 0.75em;
+}
+.left p {
+    font-weight: 500;
+    font-size: 0.7em;
+}
+/* right side */
+.right{
+    width: 50%;
+    padding:0 3em;
+}
+.right p{
+    color: #fff;
+    font-size: 0.75em;
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 0.25em;
+    text-align: center;
+    padding: 1.5% 0;
+    margin-bottom: 1em;
+}
+.right p span{
+    font-weight: 700;
+}
+/* form */
+form{
+    width: 100%;
+    padding: 1.5em;
+    background-color: #fff;
+    border-radius: 0.3em;
+}
+.form_control {
+    position: relative;
+}
+.form_control input{
+    width: 100%;
+    height: 3em;
+    padding: 1em;
+    margin-bottom: 2em;
+    border-radius: 0.3em;
+    border:1px solid hsl(246, 25%, 77%);
+}
+.form_control input:focus{
+    outline: none !important;
+    border: 1px solid hsl(249, 10%, 26%);
+}
+button{
+    width: 100%;
+    background-color:hsl(154, 59%, 51%) ;
+    color: white;
+    border: none;
+    padding: 1em;
+    font-size: 0.7em;
+    border-radius: 0.3em;
+    font-weight: 600;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+small{
+    font-size: 0.6em;
+    display: block;
+    color: hsl(246, 25%, 77%);
+    text-align: center;
+}
+small span{
+    font-weight: 500;
+    color:hsl(0, 100%, 74%);
+    
+}
+.form_control img{
+    position: absolute;
+    right: 1em;
+    top: 0.5em;
+    width: 1em;
+    visibility: hidden;
+}
+.form_control small{
+    position: absolute;
+    color:hsl(0, 100%, 74%);
+    right: 0;
+    bottom: 1em;
+    visibility: hidden;
+}
+/* css for success and error class */
+.form_control.error input{
+    border-color:hsl(0, 100%, 74%);
+}
+.form_control.error img{
+    visibility: visible;
+}
+.form_control.error small {
+    visibility: visible;
+}
+.form_control.success input{
+    border-color:hsl(154, 59%, 51%);
+}
+/* media query */
+@media (max-width: 480px){
+    .container{
+        flex-direction: column-reverse;
+        width: 100vw;
+        margin:0;
+        padding: 0 1em;
+    }
+    .left{
+        width:100%;
+        order:1;
+    }
+    .right{
+        width: 100%;
+        padding:0;
+    }
+
+}
+@media (max-width: 768px){
+    .container{
+        padding: 0;
+        margin: 2em 0;
+    }
+    .right{
+        width: 60%;
+    }
+}

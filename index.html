@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- left side -->
+        <div class="left">
+            <h1>Learn to code by watching others</h1>
+            <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but
+                understanding how developers think is invaluable.</p>
+        </div>
+        <!-- right side -->
+        <div class="right">
+            <!-- header of form -->
+            <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+            <!-- the form -->
+            <form id="form">
+                <div class="form_control">
+                    <input id="firstName" type="text" placeholder="First Name">
+                    <img src="/images/icon-error.svg" alt="">
+                    <small>error message</small>
+                </div>
+
+                <div class="form_control">
+                    <input id="lastName" type="text" placeholder="Last Name">
+                    <img src="/images/icon-error.svg" alt="">
+                    <small>error message</small>
+                </div>
+
+                <div class="form_control">
+                    <input id="email" type="email" placeholder="Email Address">
+                    <img src="/images/icon-error.svg" alt="">
+                    <small>error message</small>
+                </div>
+
+                <div class="form_control">
+                    <input id="password" type="password" placeholder="Password">
+                    <img src="/images/icon-error.svg" alt="">
+                    <small>error message</small>
+                </div>
+                <!-- button and small text -->
+                <button type="submit">CLAIM YOUR FREE TRIAL</button>
+                <small>By clicking the button, you are agreeing to our <span>Terms and Services</span></small>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+<script src="app.js"></script>
+
+</html>
