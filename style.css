@@ -123,6 +123,16 @@ small span{
     border-color:hsl(154, 59%, 51%);
 }
 /* media query */
+
+@media (max-width: 768px) and (min-width:480px){
+    .container{
+        padding: 0;
+        margin: 2em 0;
+    }
+    .right{
+        width: 60%;
+    }
+}
 @media (max-width: 480px){
     .container{
         flex-direction: column-reverse;
@@ -139,13 +149,4 @@ small span{
         padding:0;
     }
 
-}
-@media (max-width: 768px) and (min-width:480px){
-    .container{
-        padding: 0;
-        margin: 2em 0;
-    }
-    .right{
-        width: 60%;
-    }
 }
