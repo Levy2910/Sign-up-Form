@@ -124,7 +124,7 @@ small span{
 }
 /* media query */
 
-@media (max-width: 768px) and (min-width:480px){
+/* @media (max-width: 768px) and (min-width:480px){
     .container{
         padding: 0;
         margin: 2em 0;
@@ -132,7 +132,7 @@ small span{
     .right{
         width: 60%;
     }
-}
+} */
 @media (max-width: 480px){
     .container{
         flex-direction: column-reverse;
